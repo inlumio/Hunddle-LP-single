@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/nft-preview-card-with-shadows-and-grid-sWcQSmqIRC)
-- Live Site URL: [GitHub Pages](https://inlumio.github.io/nft-preview-card-component-frontendmentor/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/landing-page-with-single-introductory-section-using-flex-MCsMwow5sT)
+- Live Site URL: [GitHub Pages](https://inlumio.github.io/Hunddle-LP-single/)
 
 ## Author Profiles
 
