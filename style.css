@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--soft-magenta: hsl(300, 69%, 71%);
+	--ff-headers: 'Poppins', sans-serif;
+	--ff-body: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: var(--ff-body);
+	color: white;
+	min-height: 100vh;
+	background-color: var(--violet);
+	background-image: url(./images/bg-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+h1 {
+	font-family: var(--ff-headers);
+}
+
+img {
+	display: block;
+}
+
+.header, .main, .footer {
+	margin-block-end: 4rem;
+}
+
+.container {
+	max-width: 1600px;
+	padding-inline: 2.25rem;
+}
+
+.header {
+	margin-block-start: 2rem;
+}
+
+.header img {
+	height: 2rem;
+}
+
+.main .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 3rem;
+}
+
+.main img {
+	max-width: 600px;
+	width: 100%;
+	flex: 1;
+	flex-basis: 150%;
+}
+
+.main__right {
+	text-align: center;
+}
+
+.main__right > *:not(:last-child) {
+	margin-block-end: 1.5rem;
+}
+
+.main__header {
+	font-size: 1.5rem;
+}
+
+.main__description {
+	line-height: 1.5;
+}
+
+.main__button {
+	font-family: var(--ff-headers);
+	background-color: #fff;
+	color: var(--violet);
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	padding: .75rem 4.5rem;
+	font-size: 0.8rem;
+	box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.main__button:hover {
+	background-color: var(--soft-magenta);
+	color: #fff;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: center;
+	gap: .75rem;
+}
+
+.social {
+	--social-color: white;
+	border: 1px solid var(--social-color);
+	border-radius: 50%;
+	padding: .5rem;
+	cursor: pointer;
+}
+
+.social:hover {
+	--social-color: var(--soft-magenta)
+}
+
+.social svg {
+	display: block;
+	fill: var(--social-color);
+	--size: 1rem;
+	width: var(--size);
+	height: var(--size);
+}
+
+@media (min-width: 750px) {
+	html {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 1150px) {
+
+	html {
+		font-size: 22px;
+	}
+
+	body {
+		background-size: cover;
+		background-position: center;
+	}
+
+	.container {
+		padding-inline: 5rem;
+	}
+
+	.main .container {
+		flex-direction: row;
+	}
+
+	.main__right {
+		text-align: start;
+	}
+
+	.main img {
+		max-width: 1000px;
+	}
+
+	.main__header {
+		font-size: 2rem;
+	}
+
+	.footer {
+		margin-block-end: 2rem;
+	}
+
+	.footer .container {
+		justify-content: end;
+	}
+
+	.footer svg {
+		--size: 0.75rem
+	}
+}
